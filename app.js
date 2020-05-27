@@ -7,7 +7,26 @@ let sentences = [
     "itant eate anot eat nato inate eat anot tain eat",
     "nee ene ate ite tent tiet ent ine ene ete ene ate"
 ];
-
+//hide lower container
 $(document).ready(function() {
-    $("#keyboard-lower-container").hide();
+    $("#keyboard-upper-container").hide();
 });
+
+//Setup
+$(function() {
+    var $write = $('write'),
+        shift = false,
+        capslock = false;
+});
+
+//click handler
+
+$('#row').click(function() {
+    var $this = $(this),
+        character = $this.html();
+        
+});
+
+// Shift keys
+
+if ($this.hasClass(''))
