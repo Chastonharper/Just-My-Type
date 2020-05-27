@@ -33,4 +33,7 @@ $(document).keyup(function(e) {
 $(document).keypress(function(e) {
     let key = $("#" + e.which);
     $(key).css("background-color", "yellow");
+    $(document).keyup(function(e) {
+        $(key).css("background-color","");
+    });
 });
