@@ -28,3 +28,9 @@ $(document).keyup(function(e) {
         $(upperKeys).hide();
     }
 });
+
+//highlight key
+$(document).keypress(function(e) {
+    let key = $("#" + e.which);
+    $(key).css("background-color", "yellow");
+});
