@@ -12,6 +12,14 @@ $(document).ready(function() {
     $("#keyboard-upper-container").hide();
 });
 
+//when key is pressed
+$(document).keydown(function(e) {
+    if (e.which === 16) {
+        $(upperKeys).show();
+        $(lowerKeys).hide();
+}
+});
+
 //Setup
 $(function() {
     var $write = $('write'),
@@ -28,5 +36,3 @@ $('#row').click(function() {
 });
 
 // Shift keys
-
-if ($this.hasClass(''))
